@@ -24,4 +24,13 @@ INSERT INTO adbms_lab.Product_Master VALUES ('P07975', 'Lycra', 5, 'Piece', 70, 
 INSERT INTO adbms_lab.Product_Master VALUES ('P08865', 'Skirt', 5, 'Piece', 75, 30, 450, 300);
 
 
-SELECT DESCRIPTION FROM adbms_lab.Product_Master;
+UPDATE adbms_lab.Product_Master SET COSTPRICE=950 WHERE DESCRIPTION="Jeans";
+
+SELECT * FROM adbms_lab.Product_Master WHERE COSTPRICE=950;
+
+DELETE FROM adbms_lab.Product_Master WHERE QTYONHAND=100;
+
+SELECT * FROM adbms_lab.Product_Master;
+
+ALTER TABLE adbms_lab.product_master MODIFY SELLPRICE float(10, 2);
+

@@ -16,4 +16,6 @@ INSERT INTO adbms_lab.Salesman_Master VALUES ('S00002', 'Omkar', '65', 'Nariman'
 INSERT INTO adbms_lab.Salesman_Master VALUES ('S00003', 'Raj', 'P-17', 'Bandra', 'Mumbai', 4000032, 'Maharashtra', 0);
 INSERT INTO adbms_lab.Salesman_Master VALUES ('S00004', 'Ashish', 'A/5', 'Juhu', 'Mumbai', 400044, 'Maharashtra', 0);
 
-SELECT * FROM adbms_lab.Salesman_Master WHERE 
+DELETE FROM adbms_lab.Salesman_Master WHERE SALAMT=3500;
+
+SELECT * FROM adbms_lab.Salesman_Master;
